@@ -27,6 +27,7 @@ function RouteComponent() {
       <div className="flex gap-4">
         <div className="w-[50%] h-[600px] px-4">
           <Textarea
+            placeholder='"{ \"test\": \"value\" }"'
             className="h-[100%]"
             onChange={handleInputChange}
             value={input}
