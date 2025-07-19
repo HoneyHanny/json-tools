@@ -1,4 +1,5 @@
 import { Link, useRouterState } from '@tanstack/react-router'
+import { Github } from 'lucide-react'
 import { Button } from './ui/button'
 import { ModeToggle } from './mode-toggle'
 
@@ -40,7 +41,16 @@ export default function Header() {
           })}
         </div>
       </nav>
-      <div className="flex flex-row">
+      <div className="flex flex-row items-center gap-2">
+        <a
+          href="https://github.com/HoneyHanny/json-tools"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub Repository"
+          className="hover:text-pink-500 transition-colors"
+        >
+          <Github className="size-6" />
+        </a>
         <ModeToggle />
       </div>
     </header>
